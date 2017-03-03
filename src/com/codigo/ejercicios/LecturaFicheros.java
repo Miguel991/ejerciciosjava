@@ -7,7 +7,7 @@ public class LecturaFicheros {
 
 	public static void main(String[] args) {
 
-		// Fichero del que queremos leer
+		// Fichero del que queremos leerr
 		File fichero = new File("/home/user/workspace/archivo.txt");
 		Scanner s = null;
 
