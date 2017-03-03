@@ -7,7 +7,7 @@ public class LecturaFicheros {
 
 	public static void main(String[] args) {
 
-		// Fichero del que queremos leerr
+		// Fichero del que queremos leer
 		File fichero = new File("/home/user/workspace/archivo.txt");
 		Scanner s = null;
 
@@ -24,6 +24,7 @@ public class LecturaFicheros {
 
 		} catch (Exception ex) {
 			System.out.println("Mensaje: " + ex.getMessage());
+			ex.printStackTrace();
 		} finally {
 			// Cerramos el fichero tanto si la lectura ha sido correcta o no
 			try {
@@ -31,6 +32,8 @@ public class LecturaFicheros {
 					s.close();
 			} catch (Exception ex2) {
 				System.out.println("Mensaje 2: " + ex2.getMessage());
+				ex2.printStackTrace();
+				
 			}
 		}
 	}
